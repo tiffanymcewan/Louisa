@@ -1,0 +1,99 @@
+body{
+	
+}
+.background {
+	background-image: url("../backgrounf.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+	
+	
+}
+
+
+
+.nav-bar a{
+	text-decoration: none;
+	color: white;
+	font-family: 'open-sans'
+	
+}
+
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #50514f;
+}
+
+.nav-bar li {
+  float: right;
+}
+
+.nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.fling-minislide {width:800px; height:550px; overflow:hidden; position:relative; margin: 100px auto; border: solid 1px black;}
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}} 
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+
+/* The sidebar menu */
+.side-bar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 150px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:black; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 23px;
+
+}
+
+/* The navigation menu links */
+.side-bar a {
+  padding: 0 8px 15px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  display: block;
+  text-align: left;
+  font-family: 'open-sans';
+	
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.side-bar a:hover {
+  color: #f1f1f1;
+}
+
+.side-bar li a 
+
+{
+	text-decoration: none;
+}
+
+.side-bar ul {
+	list-style-type: none;
+}
